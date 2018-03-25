@@ -7,29 +7,28 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.peacecorps.malaria.R;
-
-import junit.framework.TestCase;
+import com.peacecorps.malaria.user_profile.UserProfileActivity;
 
 /**
  * Created by yatna on 17/8/16.
  */
-public class UserProfileTest extends ActivityInstrumentationTestCase2 {
+public class UserProfileActivityTest extends ActivityInstrumentationTestCase2 {
 
-    private UserProfile mActivity;
+    private UserProfileActivity mActivity;
     private EditText userNameEt;
     private EditText userEmailEt;
     private EditText userAgeEt;
     private EditText userMedicineTypeEt;
     private Button saveData;
 
-    public UserProfileTest() {
-        super(UserProfile.class);
+    public UserProfileActivityTest() {
+        super(UserProfileActivity.class);
     }
 
     public void setUp() throws Exception {
         super.setUp();
         setActivityInitialTouchMode(false);
-        mActivity=(UserProfile)getActivity();
+        mActivity=(UserProfileActivity)getActivity();
         userNameEt=(EditText)mActivity.findViewById(R.id.user_name);
         userEmailEt=(EditText)mActivity.findViewById(R.id.user_email);
         userAgeEt=(EditText)mActivity.findViewById(R.id.user_age);

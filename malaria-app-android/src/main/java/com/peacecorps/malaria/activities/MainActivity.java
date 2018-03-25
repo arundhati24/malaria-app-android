@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.peacecorps.malaria.R;
+import com.peacecorps.malaria.user_profile.UserProfileActivity;
 import com.peacecorps.malaria.model.SharedPreferenceStore;
 import com.peacecorps.malaria.adapter.FragmentAdapter;
 import com.peacecorps.malaria.db.DatabaseSQLiteHelper;
@@ -81,7 +82,7 @@ public class MainActivity extends FragmentActivity {
         userProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),UserProfile.class));
+                startActivity(new Intent(getApplicationContext(),UserProfileActivity.class));
                 finish();
             }
         });

@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.peacecorps.malaria.R;
+import com.peacecorps.malaria.user_profile.UserProfileActivity;
 import com.peacecorps.malaria.model.SharedPreferenceStore;
 import com.peacecorps.malaria.db.DatabaseSQLiteHelper;
 
@@ -68,7 +69,7 @@ public class InfoHubFragmentActivity extends FragmentActivity {
         userProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplication().getApplicationContext(),UserProfile.class));
+                startActivity(new Intent(getApplication().getApplicationContext(),UserProfileActivity.class));
                 finish();
             }
         });

@@ -28,6 +28,7 @@ import android.widget.Toast;
 
 
 import com.peacecorps.malaria.R;
+import com.peacecorps.malaria.user_profile.UserProfileActivity;
 import com.peacecorps.malaria.db.DatabaseSQLiteHelper;
 import com.peacecorps.malaria.model.SharedPreferenceStore;
 import com.peacecorps.malaria.reciever.TripAlarmReceiver;
@@ -120,7 +121,7 @@ public class TripIndicatorFragmentActivity extends FragmentActivity {
         userProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), UserProfile.class));
+                startActivity(new Intent(getApplicationContext(), UserProfileActivity.class));
                 finish();
             }
         });

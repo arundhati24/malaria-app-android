@@ -7,7 +7,6 @@ public class UtilityMethods {
 
     //check if email is valid
     public static boolean validEmail(String mail) {
-        boolean  r=android.util.Patterns.EMAIL_ADDRESS.matcher(mail).matches();
-        return r;
+        return android.util.Patterns.EMAIL_ADDRESS.matcher(mail).matches();
     }
 }

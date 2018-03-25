@@ -60,6 +60,10 @@ public class DatabaseSQLiteHelper extends SQLiteOpenHelper {
     public static ArrayList<Double> percentage;
     public static ArrayList<Integer> date;
 
+
+
+
+
     /**Method to Update the Progress Bars**/
     public int getData(int month, int year, String choice) {
 
